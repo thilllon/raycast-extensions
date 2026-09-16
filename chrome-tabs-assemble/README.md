@@ -13,9 +13,9 @@ The extension ID is pinned by the `key` in `chrome-extension/manifest.json`, so 
 
 ## Setup
 
-1. `npm install`
+1. `mise install && pnpm install`
 2. In Chrome, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and pick this folder's `chrome-extension/` directory. Keep the folder in place; Chrome loads it from disk.
-3. `npm run dev` to import the command into Raycast, then assign a hotkey in Raycast settings if you like.
+3. `pnpm dev` to import the command into Raycast, then assign a hotkey in Raycast settings if you like.
 
 ## Behavior
 

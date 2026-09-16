@@ -8,10 +8,13 @@ Personal Raycast extensions. Each folder is a standalone extension with its own 
 
 ## Developing an extension
 
+Node and pnpm versions come from `mise.toml` at the repo root.
+
 ```sh
+mise install   # node + pnpm
 cd <extension>
-npm install
-npm run dev    # import into Raycast with hot reload
-npm run lint
-npm run build
+pnpm install
+pnpm dev       # import into Raycast with hot reload
+pnpm lint
+pnpm build
 ```
