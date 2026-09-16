@@ -20,6 +20,16 @@
       "mode": "no-view"
     }
   ],
+  "preferences": [
+    {
+      "name": "extensionId",
+      "title": "Chrome Extension ID",
+      "description": "ID of the companion Chrome extension. Set this to the Chrome Web Store ID once it is installed from the store; leave empty for the unpacked folder in this repo.",
+      "type": "textfield",
+      "required": false,
+      "default": "lgmjjcmgnchgbbcepmklfnihlpmiifei"
+    }
+  ],
   "dependencies": {
     "@raycast/api": "^1.104.25"
   },
@@ -35,6 +45,7 @@
     "dev": "ray develop",
     "lint": "ray lint",
     "fix-lint": "ray lint --fix",
-    "build": "ray build"
+    "build": "ray build",
+    "pack": "node scripts/pack-chrome-extension.mjs"
   }
 }

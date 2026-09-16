@@ -14,8 +14,12 @@ The extension ID is pinned by the `key` in `chrome-extension/manifest.json`, so 
 ## Setup
 
 1. `mise install && pnpm install`
-2. In Chrome, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and pick this folder's `chrome-extension/` directory. Keep the folder in place; Chrome loads it from disk.
+2. Install the Chrome extension, either way:
+   - **From the Chrome Web Store (unlisted):** `<store link goes here once published>`. Then put its ID in the command's **Chrome Extension ID** preference in Raycast.
+   - **Unpacked:** open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and pick this folder's `chrome-extension/` directory. Keep the folder in place; Chrome loads it from disk. The preference can stay at its default.
 3. `pnpm dev` to import the command into Raycast, then assign a hotkey in Raycast settings if you like.
+
+To publish a new version of the Chrome extension, run `pnpm pack` and follow [store-listing.md](./store-listing.md).
 
 ## Behavior
 

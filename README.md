@@ -4,7 +4,7 @@ Personal Raycast extensions. Each folder is a standalone extension with its own 
 
 | Extension | What it does |
 | --- | --- |
-| [chrome-tabs-assemble](./chrome-tabs-assemble) | Move all Chrome tabs from every window into the frontmost window, keeping pinned tabs and tab groups |
+| [chrome-tabs-assemble](./chrome-tabs-assemble) | Move all Chrome tabs from every window into the frontmost window, keeping pinned tabs and tab groups. Needs its companion Chrome extension — store link: `<pending>` |
 
 ## Developing an extension
 
