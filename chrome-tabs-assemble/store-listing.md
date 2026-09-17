@@ -6,7 +6,7 @@ Visibility: **Unlisted** — no listing page, installable by anyone with the lin
 ## Steps
 
 1. `pnpm pack` — writes `build/chrome-tabs-assemble-<version>.zip` (the manifest `key` is stripped, which a first upload requires).
-2. Register at the [developer dashboard](https://chrome.google.com/webstore/devconsole) and pay the one-time registration fee.
+2. Open the [developer dashboard](https://chrome.google.com/webstore/devconsole). The registration fee is one-time per account, so an account that has published before pays nothing here. (Publishing private to a Google Workspace domain needs no fee at all, but that is a different distribution mode than the unlisted listing below.)
 3. **Add new item**, upload the zip, fill in the listing below, set Visibility to **Unlisted**, and submit for review.
 4. After it is published, install it from the store link, then:
    - Put the store URL in both READMEs.
