@@ -1,3 +1,0 @@
-# esbuild ships a native binary that its install script links; ray build needs it.
-allowBuilds:
-  esbuild: true
