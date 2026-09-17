@@ -5,7 +5,10 @@ Visibility: **Unlisted** — no listing page, installable by anyone with the lin
 
 ## Steps
 
-1. `pnpm pack` — writes `build/chrome-tabs-assemble-<version>.zip` (the manifest `key` is stripped, which a first upload requires).
+1. `pnpm release` — writes everything to upload:
+   - `build/chrome-tabs-assemble-<version>.zip` (the manifest `key` is stripped, which a first upload requires)
+   - `build/store/screenshot-1-before.png` and `screenshot-2-after.png`, 1280x800, captured from a real run of the extension in a throwaway Chromium profile
+   - macOS asks for Screen Recording permission the first time, for the app the command runs in. Without it the capture step stops with instructions and only the zip is produced. `pnpm release` can be re-run any time.
 2. Open the [developer dashboard](https://chrome.google.com/webstore/devconsole). The registration fee is one-time per account, so an account that has published before pays nothing here. (Publishing private to a Google Workspace domain needs no fee at all, but that is a different distribution mode than the unlisted listing below.)
 3. **Add new item**, upload the zip, fill in the listing below, set Visibility to **Unlisted**, and submit for review.
 4. After it is published, install it from the store link, then:
@@ -31,7 +34,7 @@ Visibility: **Unlisted** — no listing page, installable by anyone with the lin
 >
 > Source: https://github.com/thilllon/raycast-extensions
 
-**Screenshot (1280x800 or 640x400, at least one required):** take a real before/after of your own windows — Chrome's policies expect screenshots of actual functionality.
+**Screenshots:** `pnpm release` produces them. They are a real run — demo windows with pinned tabs and tab groups before, the merged window after — so they show actual functionality, as Chrome's policies expect.
 
 ## Privacy tab answers
 

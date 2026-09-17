@@ -19,7 +19,7 @@ The extension ID is pinned by the `key` in `chrome-extension/manifest.json`, so 
    - **Unpacked:** open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and pick this folder's `chrome-extension/` directory. Keep the folder in place; Chrome loads it from disk. The preference can stay at its default.
 3. `pnpm dev` to import the command into Raycast, then assign a hotkey in Raycast settings if you like.
 
-To publish a new version of the Chrome extension, run `pnpm pack` and follow [store-listing.md](./store-listing.md).
+To publish a new version of the Chrome extension, run `pnpm release` — it writes the upload zip and captures the store screenshots by running the extension in a throwaway Chromium profile — then follow [store-listing.md](./store-listing.md). Uploading is the only manual step.
 
 ## Behavior
 
