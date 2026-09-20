@@ -1,0 +1,6 @@
+# Historical Chrome extension manifest keys, verified as 2048-bit RSA public keys
+# with `openssl pkey -pubin -inform DER`. These are not credentials/private keys.
+# https://developer.chrome.com/docs/extensions/reference/manifest/key
+# Only these exact historical findings are ignored; future changes remain scanned.
+1ab77282c717869941c195c7b1bd520238031805:chrome-tabs-assemble/scripts/screenshot-fixture/manifest.json:generic-api-key:6
+8abf61f9e760e6279aeb11ed739b58c2c9ba1dcb:chrome-tabs-assemble/chrome-extension/manifest.json:generic-api-key:7

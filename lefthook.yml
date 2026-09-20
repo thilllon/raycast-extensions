@@ -1,0 +1,12 @@
+# Use the version pinned in mise.toml, including from non-interactive Git hooks.
+lefthook: mise exec -- lefthook
+
+pre-commit:
+  commands:
+    gitleaks:
+      run: mise run secrets:staged
+
+pre-push:
+  commands:
+    gitleaks:
+      run: mise run secrets
